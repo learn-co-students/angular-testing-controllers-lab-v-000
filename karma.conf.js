@@ -10,9 +10,9 @@ module.exports = function (config) {
         ],
         exclude: [],
         plugins: [
-            require("karma-chrome-launcher"),
-            require("karma-jasmine"),
-            require("karma-spec-reporter")
+        'karma-chrome-launcher',
+        'karma-jasmine',
+        'karma-spec-reporter'
         ],
         preprocessors: {},
         reporters: ['spec'],
