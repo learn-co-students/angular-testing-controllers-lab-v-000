@@ -7,25 +7,24 @@ describe('ContactController', function () {
 		$controller = _$controller_;
 	}));
 
-
 	it('should have a name property set to "Bill Gates"', function () {
 		var $scope = {};
 		$controller('ContactController', {$scope: $scope});
 
-		expect($scope.name).toBe('Steve Jobs');
+		expect($scope.name).toBe('Bill Gates');
 	});
 
 	it('should have a title set to "Founder"', function () {
 		var $scope = {};
 		$controller('ContactController', {$scope: $scope});
 
-		expect($scope.title).toBe('Cleaner');
+		expect($scope.title).toBe('Founder');
 	});
 
 	it('should have an email set to "bill@microsoft.com"', function () {
 		var $scope = {};
 		$controller('ContactController', {$scope: $scope});
 
-		expect($scope.email).toBe('tim@apple.com');
+		expect($scope.email).toBe('bill@microsoft.com');
 	});
 });
